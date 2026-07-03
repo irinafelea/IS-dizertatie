@@ -1,0 +1,34 @@
+server:
+  port: 8090
+
+spring:
+  config:
+    import: optional:file:.env[.properties]
+  r2dbc:
+    url: xxx
+    username: 
+    password:
+    pool:
+      initial-size: 10
+      max-size: 50
+
+app:
+  external:
+    base-url: xxx
+    token: xxx
+    domain-id: xxx
+
+ollama:
+  base-url: xxx
+  model: xxx
+  timeout: 120000
+
+nlp:
+  confidence-threshold: 0.5
+  max-retries: 3
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,mappings
