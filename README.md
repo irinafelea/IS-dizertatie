@@ -1,13 +1,13 @@
 # Generarea orarelor universitare folosind un algoritm genetic și căutare adaptivă în vecinătăți extinse
 
-Acest repository conține lucrarea de dizertație și codul sursă aferent aplicației dezvoltate pentru generarea orarelor universitare. Soluția propusă extinde o platformă existentă de administrare a orarelor prin integrarea a două componente principale:
+Acest repository conține codul sursă aferent aplicației dezvoltate pentru generarea orarelor universitare și exemple ilustrative ale modului de funcționare. Soluția propusă extinde o platformă existentă de administrare a orarelor prin integrarea a două componente principale:
 
 - un modul bazat pe modele lingvistice mari (LLM), utilizat pentru procesarea opțiunilor cadrelor didactice formulate în limbaj natural;
 - un modul de generare automată a orarelor universitare, bazat pe o abordare hibridă care combină un algoritm genetic cu Large Neighborhood Search.
 
 ## Conținutul directorului
 
-Directorul conține codul sursă al componentelor dezvoltate în cadrul lucrării. Acesta este organizat în două directoare principale:
+Directorul conține codul sursă al componentelor dezvoltate în cadrul lucrării. Acesta este organizat în trei directoare principale:
 
 ```text
 is-dizertatie
@@ -72,7 +72,9 @@ is-dizertatie
 
 - `ai-service/` – conține serviciul bazat pe modele lingvistice mari, utilizat pentru procesarea opțiunilor cadrelor didactice formulate în limbaj natural și transformarea acestora în constrângeri structurate;
 
-- `generator-service/` – conține serviciul responsabil de generarea automată a orarelor universitare, folosind abordarea hibridă bazată pe algoritm genetic și Large Neighborhood Search.
+- `generator-service/` – conține serviciul responsabil de generarea automată a orarelor universitare, folosind abordarea hibridă bazată pe algoritm genetic și Large Neighborhood Search;
+
+- `demo/` – conține exemple ilustrative ale modului de funcționare a celor două module.
 
 
 ## Demo
@@ -95,3 +97,10 @@ Pornind de la soluția inițială generată de algoritmul genetic, exemplul evid
 Acest exemplu prezintă un pas al mecanismului LNS, în care o parte a soluției este eliminată printr-un operator de distrugere, iar apoi este reconstruită printr-un operator de reparare.
 
 ![Demo](demo/distrugere-reparare.gif)
+
+
+## Prezentare video
+
+Videoclipul prezintă funcționalitățile dezvoltate în cadrul lucrării, arhitectura platformei existente, cele două module adăugate și fluxul complet al aplicației. De asemenea, sunt prezentate rezultatele obținute pentru cele două componente.
+
+📹 [Vizualizează prezentarea video](demo/prezentare.mp4)
