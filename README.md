@@ -103,6 +103,8 @@ Acest exemplu prezintă un pas al mecanismului LNS, în care o parte a soluției
 
 Videoclipul prezintă funcționalitățile dezvoltate în cadrul lucrării, arhitectura platformei existente, cele două module adăugate și fluxul complet al aplicației. De asemenea, sunt prezentate rezultatele obținute pentru cele două componente.
 
+[![Prezentare video](/video/Felea_Irina-Maria_DizertatieIS.png)](/video/Felea_Irina-Maria_DizertatieIS.mp4)
+
 <video width="800" controls>
-  <source src="demo/prezentare.mp4" type="video/mp4">
+  <source src="video/Felea_Irina-Maria_DizertatieIS.mp4" type="video/mp4">
 </video>
