@@ -34,7 +34,8 @@ is-dizertatie
 |
 ├── demo/
 │   ├── distrugere-reparare.gif
-│   └── evolutia-solutiei-ga-lns.gif
+│   ├── evolutia-solutiei-ga-lns.gif
+│   └── maparea-optiunilor.gif
 |
 └── generator-service/
     ├── app/
@@ -76,9 +77,15 @@ is-dizertatie
 
 ## Demo
 
+### Maparea opțiunilor cadrelor didactice
+
+În această demonstrație, două opțiuni formulate în limbaj natural sunt transformate în reprezentări structurate și mapate pe intervalele orare utilizate de platformă.
+
+![Demo](demo/maparea-optiunilor.gif)
+
 ### Evoluția soluției: GA → LNS
 
-Acest exemplu ilustrează evoluția orarului pornind de la soluția inițială generată de algoritmul genetic și continuând cu îmbunătățirile realizate în etapa Large Neighborhood Search.
+Pornind de la soluția inițială generată de algoritmul genetic, exemplul evidențiază îmbunătățirile succesive obținute în etapa mecanismului Large Neighborhood Search.
 
 ![Demo](demo/evolutia-solutiei-ga-lns.gif)
 
