@@ -10,7 +10,6 @@ Acest repository conține lucrarea de dizertație și codul sursă aferent aplic
 Directorul conține codul sursă al componentelor dezvoltate în cadrul lucrării. Acesta este organizat în două directoare principale:
 
 ```text
-
 is-dizertatie
 ├── ai-service/
 |   ├── src/
@@ -32,6 +31,10 @@ is-dizertatie
 |   │   └── test/
 |   ├── pom.xml
 |   └── .env.example
+|
+├── demo/
+│   ├── distrugere-reparare.gif
+│   └── evolutia-solutiei-ga-lns.gif
 |
 └── generator-service/
     ├── app/
