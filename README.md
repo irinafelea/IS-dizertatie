@@ -5,6 +5,14 @@ Acest repository conține codul sursă aferent aplicației dezvoltate pentru gen
 - un modul bazat pe modele lingvistice mari (LLM), utilizat pentru procesarea opțiunilor cadrelor didactice formulate în limbaj natural;
 - un modul de generare automată a orarelor universitare, bazat pe o abordare hibridă care combină un algoritm genetic cu Large Neighborhood Search.
 
+
+## Descrierea proiectului
+Aplicația are ca scop sprijinirea procesului de realizare a orarelor universitare, folosind date instituționale reale, constrângeri hard și soft, disponibilități ale cadrelor didactice și mecanisme de optimizare.
+
+Modulul bazat pe LLM transformă textele introduse de cadrele didactice în constrângeri structurate, care pot fi utilizate ulterior de algoritmul de generare a orarului. Pentru această componentă au fost evaluate mai multe modele rulate local prin Ollama.
+
+Modulul de generare a orarului utilizează o metodă hibridă GA + LNS. Algoritmul genetic construiește o soluție inițială, iar etapa LNS îmbunătățește soluția prin mutări iterative de tip distrugere-reparare. În cadrul acestui modul sunt utilizați algoritmi metaeuristici de optimizare, precum Genetic Algorithm, Large Neighborhood Search, Simulated Annealing și selecția adaptivă bazată pe mecanismul Upper Confidence Bound pentru alegerea operatorilor.
+
 ## Conținutul directorului
 
 Directorul conține codul sursă al componentelor dezvoltate în cadrul lucrării. Acesta este organizat în trei directoare principale:
@@ -75,6 +83,27 @@ is-dizertatie
 - `generator-service/` – conține serviciul responsabil de generarea automată a orarelor universitare, folosind abordarea hibridă bazată pe algoritm genetic și Large Neighborhood Search;
 
 - `demo/` – conține exemple ilustrative ale modului de funcționare a celor două module.
+
+
+## Tehnologii utilizate
+
+| Tehnologie | Versiune / observații |
+|---|---|
+| Java | 21 |
+| Spring Boot | 3.4.2 |
+| Maven | 4.0.0/ utilizat pentru `ai-service` |
+| Python | 3.13 |
+| pip | 25.3 |
+| FastAPI | utilizat pentru `generator-service` |
+| Uvicorn | utilizat pentru rularea serviciului FastAPI |
+| PostgreSQL | utilizat pentru persistența datelor |
+| R2DBC PostgreSQL | utilizat în `ai-service` pentru acces reactiv la baza de date |
+| SQLAlchemy | utilizat în `generator-service` |
+| Redis | utilizat pentru cache în platforma principală |
+| Kafka | utilizat pentru comunicarea asincronă în platforma principală |
+| Docker | utilizat pentru rularea serviciilor și a infrastructurii auxiliare |
+| Ollama | utilizat pentru rularea locală a modelelor LLM |
+| Modele LLM locale | `llama3.1:8b`, `mistral`, `gemma3:4b`, `gemma3:12b` |
 
 
 ## Demo
